@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Edgy Auth Alpha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="dist/material/css/material.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="dist/SnackBar-master/dist/snackbar.css">
+</head>
+
+<body>
+    <div class="progress">
+        <div id="couneter-top" class="progress-bar w-35" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <nav>
+        <div class="container">
+            <div style="margin:auto">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tokens</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">New Account</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Settings</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div id="accounts-panel">
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="card" style="margin-top: 20px;">
+                    <div class="card-body">
+                        <h2>Add Account</h2>
+                        <p>
+                            You can add Authenticator accounts such as Gmail, Facebook, Dropbox and many more using EdgyAuth. For the time being it is not possible to scan QR codes, but you can add accounts by entering the code provided by the service in which you want to enable 2FA.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" style="margin-top: 20px;">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Add Account</h5><h5 id="new-account-issuer-name"> </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h4>Name</h4>
+                                    <div class="floating-label">
+                                            <label for="exampleFloatingLabel1">name</label>
+                                            <input aria-describedby="" class="form-control" id="new-account-name" placeholder="name" type="text" required>
+                                            <br>
+                                    </div>
+                                    <div style="height: 40%; overflow-y: scroll;">
+                                            <ul class="list-group" id="new-account-issuer-list">
+                                                </ul>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" onclick="AddAccount();" data-dismiss="modal">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <h4>Enter Code Given By Website</h4>
+                        <div class="form-group">
+                            <div class="floating-label">
+                                <label for="exampleFloatingLabel1">OPT URI</label>
+                                <input aria-describedby="" class="form-control" id="new-account-secret" placeholder="ie: 23TplPdS46Juzcyx" type="text">
+                                <br>
+                                <button class="btn btn-secondary my-1" data-toggle="modal" data-target="#exampleModalCenter" type="button" style="width: 100%; text-align: center;">Add Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>window.$ = window.jQuery = require('./js/jquery-3.3.1.slim.min.js');</script>
+    <!-- <script src="js/jquery-3.3.1.slim.min.js"></script> -->
+    <script src="renderer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="dist/jsOTP.min.js"></script>
+    <script src="dist/imgcolr.html5.min.js"></script>
+    <script src="dist/SnackBar-master/dist/snackbar.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/company-logos.js"></script>
+    <script src="js/main.js"></script>
+    <script defer src="dist/material/js/material.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "EdgyAuth",
+  "version": "1.0.0",
+  "description": "A Two Step authenticator app.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build":"electron-packager ./ EdgyAuth --platform=win32 --arch=x64"
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "twostep",
+    "mfa",
+    "authenticator",
+    "2fa"
+  ],
+  "author": "Edgy Media",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^3.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
