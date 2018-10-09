@@ -5,7 +5,7 @@ Two Step authenticator app.  Built on electron but also able to run in a browser
 
 
 
-|                |           |    |
+|                |    Images       |    |
 |:---------------------:|:---------------:|:-------:|
 | ![Image](screenshots/homepage.PNG) | ![Image](screenshots/homepage-tokens.PNG) | ![Image](screenshots/addaccount.PNG) |
 
