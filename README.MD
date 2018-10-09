@@ -3,7 +3,11 @@
 
 Two Step authenticator app.  Built on electron but also able to run in a browser.  Using the TOTP time based one time password system.  This is supported by most websites such as google, github, discord etc..
 
-![Image](screenshots/homepage.PNG)
+
+
+|                |           |    |
+|:---------------------:|:---------------:|:-------:|
+| ![Image](screenshots/homepage.PNG) | ![Image](screenshots/homepage-tokens.PNG) | ![Image](screenshots/addaccount.PNG) |
 
 ## To do
 
