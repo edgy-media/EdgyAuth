@@ -45,3 +45,7 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+
+.progress-bar {
+    transition: all 0.9s ease;
+  }
