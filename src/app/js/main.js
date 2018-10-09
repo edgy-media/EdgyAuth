@@ -13,7 +13,7 @@ $ = function(sel) {
     "no":"1.0.6",
     "major":"1",
     "minor":"0",
-    "patch":"4"
+    "patch":"5"
 }
 
   LoadTabs();
@@ -27,8 +27,12 @@ $ = function(sel) {
     $(elements.settings["version-info"].minor).innerHTML = version.minor;
     $(elements.settings["version-info"].patch).innerHTML = version.patch;
   }
-  
+
+
+  $("#settings-accounts-delate-diolog-erase").addEventListener("click", function(){ removeAccount(); });
+
   function loadSettingsAccounts() {
+    $("#settings-accounts-table").innerHTML = "";
     for (var i = 0; i < storage.accounts.length; i++) {
         var account = storage.accounts[i];  
         Render_SettingsTabAccount(account);
@@ -49,15 +53,39 @@ $ = function(sel) {
             Options
             </button>
             <div class="dropdown-menu btn-sm" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item btn-sm" style="color: red;" href="#">Remove Account</a>
+                <a class="dropdown-item btn-sm" style="color: red;" href="#" data-toggle="modal" data-target="#remove-account-model" onclick="removeAccountDiolog('${account.label}','${account.id}')">Remove Account</a>
             </div>
         </div>
     </td>
 </tr>`;
     $("#settings-accounts-table").innerHTML = $(elements.settings.accounts.table).innerHTML + html;
   }
+
+  function removeAccount() {
+    var accountID = delateaccountID;
+    var accountsARRAY = [];
+    for (var i = 0; i < storage.accounts.length; i++) {
+        var account = storage.accounts[i];  
+        if (account.id == accountID) {
+            console.log("Account removed: " + account.label)
+        } else {
+            console.log("Account saved: " + account.label)
+            accountsARRAY.unshift(account);
+        }
+    }
+    storage.accounts = accountsARRAY;
+    saveStorage();
+    LoadTabs();
+    loadaccounts();
+  }
+
+  function removeAccountDiolog(accountLabel, accountID) {
+    $("#settings-accounts-delete-name").innerHTML = accountLabel;
+    delateaccountID = accountID;
+  }
   
   function loadaccounts() {
+    document.getElementById("accounts-panel").innerHTML = "";
     if (config.debug == true) {
         console.log(`%cLoading ${storage.accounts.length} Account/accounts`, `color: blue; font-size: 24px;`)
     }
@@ -254,7 +282,8 @@ $ = function(sel) {
           "custom": false,
           "hex":"#01acec"
       },
-      "date":today
+      "date":today,
+      "erased":false
     }
   
     if (config.debug == true) {
@@ -272,5 +301,6 @@ $ = function(sel) {
     loadaccounts();
     saveStorage();
     updateTotp();
+    loadSettingsAccounts();
   }
   
