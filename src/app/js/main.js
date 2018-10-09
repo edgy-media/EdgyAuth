@@ -29,7 +29,7 @@ $ = function(sel) {
      role="button" aria-expanded="false" aria-controls="collapseExample">
     <blockquote class="blockquote" style="border-left: 0.3125rem solid ${colour};">
         <div>
-            <img width="50px" height="50px" class="company-icon" src="${GetCompanyLogo(account.company)}">
+            <img width="50px" height="50px" class="company-icon" data-toggle="tooltip" data-placement="top" title="${account.label}" src="${GetCompanyLogo(account.company)}">
         </div>
         <div>
             <p class="mb-0 account-label" style="display:inline-block;vertical-align: middle;">${account.label}</p>

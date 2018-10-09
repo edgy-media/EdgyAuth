@@ -3,10 +3,10 @@
 <head>
     <title>Edgy Auth Alpha</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="dist/material/css/material.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="dist/SnackBar-master/dist/snackbar.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/material/css/material.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/SnackBar-master/dist/snackbar.css">
 </head>
 
 <body>
@@ -85,23 +85,80 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <!-- Settings Tab -->
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Settings</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="list-group list-group-flush" id="accordionTwo">
+                      <div class="expansion-panel list-group-item">
+                        <a aria-controls="collapseFour" aria-expanded="false" class="expansion-panel-toggler collapsed" data-toggle="collapse" href="#collapseFour" id="headingFour">
+                          Connected expansion panel item #1
+                          <div class="expansion-panel-icon ml-3 text-black-secondary">
+                            <i class="collapsed-show material-icons">keyboard_arrow_down</i>
+                            <i class="collapsed-hide material-icons">keyboard_arrow_up</i>
+                          </div>
+                        </a>
+                        <div aria-labelledby="headingFour" class="collapse" data-parent="#accordionTwo" id="collapseFour">
+                          <div class="expansion-panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="expansion-panel list-group-item">
+                        <a aria-controls="collapseFive" aria-expanded="false" class="expansion-panel-toggler collapsed" data-toggle="collapse" href="#collapseFive" id="headingFive">
+                          Connected expansion panel item #2
+                          <div class="expansion-panel-icon ml-3 text-black-secondary">
+                            <i class="collapsed-show material-icons">keyboard_arrow_down</i>
+                            <i class="collapsed-hide material-icons">keyboard_arrow_up</i>
+                          </div>
+                        </a>
+                        <div aria-labelledby="headingFive" class="collapse" data-parent="#accordionTwo" id="collapseFive">
+                          <div class="expansion-panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="expansion-panel list-group-item">
+                        <a aria-controls="collapseSix" aria-expanded="false" class="expansion-panel-toggler collapsed" data-toggle="collapse" href="#collapseSix" id="headingSix">
+                          Connected expansion panel item #3
+                          <div class="expansion-panel-icon ml-3 text-black-secondary">
+                            <i class="collapsed-show material-icons">keyboard_arrow_down</i>
+                            <i class="collapsed-hide material-icons">keyboard_arrow_up</i>
+                          </div>
+                        </a>
+                        <div aria-labelledby="headingSix" class="collapse" data-parent="#accordionTwo" id="collapseSix">
+                          <div class="expansion-panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </div>
     </div>
-    <!-- Optional JavaScript -->
+    <!-- Script Includes -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script>window.$ = window.jQuery = require('./js/jquery-3.3.1.slim.min.js');</script>
     <!-- <script src="js/jquery-3.3.1.slim.min.js"></script> -->
+
+    <!-- UI -->
     <script src="renderer.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="dist/jsOTP.min.js"></script>
-    <script src="dist/imgcolr.html5.min.js"></script>
-    <script src="dist/SnackBar-master/dist/snackbar.js"></script>
+    <script src="assets/popper.js/popper.min.js"></script>
+    <script src="assets/bootstrap4/bootstrap.min.js"></script>
+    <script src="assets/SnackBar-master/dist/snackbar.js"></script>
+    <script defer src="assets/material/js/material.js"></script>
+    <!-- END OF UI -->
+
+    <!-- CORE INCLUDES -->
+    <script src="OTP/jsOTP.min.js"></script>
     <script src="js/variables.js"></script>
     <script src="js/company-logos.js"></script>
     <script src="js/main.js"></script>
-    <script defer src="dist/material/js/material.js"></script>
+    <!-- END CORE INCLUDES -->
 </body>
 
 </html>
