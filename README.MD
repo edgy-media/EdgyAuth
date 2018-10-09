@@ -16,7 +16,7 @@ Two Step authenticator app.  Built on electron but also able to run in a browser
 | Generate 2FA codes    |Base32 genrate TOTP tokens.| ✅       |
 | Add Account           || ✅       |
 | Edit Account          |Edit account from local DB| ❌       |
-| Remove Account        |Remove account from local DB| ❌       |
+| Remove Account        |Remove account from local DB| ✅       |
 | Error Handling        |Handles errors with out crashing.| ✅       |
 | Copy snackbar         || ✅       |
 | Electron              |Runs as an desktop app using electron.| ✅       |
