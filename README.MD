@@ -22,7 +22,7 @@ Two Step authenticator app.  Built on electron but also able to run in a browser
 | Electron              |Runs as an desktop app using electron.| ✅       |
 | Copy snackbar         |Notification when you copy your token.| ✅       |
 | Local Storage         || ✅       |
-| 30 Second timmer      || ❌       |
+| 30 Second timmer      || ✅       |
 | Encrypted Backups      || ❌       |
 | Encrypted Local Storage      || ❌       |
 | REST API      |API to handle backups.| ❌       |

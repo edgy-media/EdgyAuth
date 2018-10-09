@@ -162,6 +162,10 @@ $ = function(sel) {
   var code = totp.getOtp("23TplPdS46Juzcyx");
   var secret = "23TplPdS46Juzcyx";
   var updateTicker = function(tick, el) {
+      var percent = tick / 30 * 100
+
+      console.log(percent)
+      $("#sec-timer-progress").setAttribute("style", `width: ${percent}%`);
   }
   
   var updateTotp = function(secret, el) {
@@ -196,7 +200,8 @@ $ = function(sel) {
     var countDown = 30 - (epoch % 30);
     updateTicker(countDown, $('#couneter-top'));
     if (epoch % 30 == 0)
-        updateTotp(secret, $(element));
+        updateTotp(secret, $(element)
+        );
   
   }
   setInterval(timeLoop, 1000);
