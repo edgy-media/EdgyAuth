@@ -1,13 +1,61 @@
+
 $ = function(sel) {
     return document.querySelector(sel);
-  }
-  ;
+  };
   
+
   loadStorage();
   loadaccounts();
   branding();
   saveStorage();
   loadIssuerList();
+  var version = {
+    "no":"1.0.6",
+    "major":"1",
+    "minor":"0",
+    "patch":"4"
+}
+
+  LoadTabs();
+
+  function LoadTabs() {
+    loadSettingsAccounts();
+    versionInfo();
+  }
+  function versionInfo() {
+    $(elements.settings["version-info"].major).innerHTML = version.major;
+    $(elements.settings["version-info"].minor).innerHTML = version.minor;
+    $(elements.settings["version-info"].patch).innerHTML = version.patch;
+  }
+  
+  function loadSettingsAccounts() {
+    for (var i = 0; i < storage.accounts.length; i++) {
+        var account = storage.accounts[i];  
+        Render_SettingsTabAccount(account);
+    }
+  }
+
+  function Render_SettingsTabAccount(account) {
+    var html = `<tr>
+    <td>
+        <div>
+            <p>${account.label}<b> - ${account.date}</b></p>
+            <i style="color: #f50057">${account.issuer}</i>
+        </div>
+    </td>
+    <td>
+        <div class="dropdown" style="margin-top: 10px">
+            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Options
+            </button>
+            <div class="dropdown-menu btn-sm" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item btn-sm" style="color: red;" href="#">Remove Account</a>
+            </div>
+        </div>
+    </td>
+</tr>`;
+    $("#settings-accounts-table").innerHTML = $(elements.settings.accounts.table).innerHTML + html;
+  }
   
   function loadaccounts() {
     if (config.debug == true) {
