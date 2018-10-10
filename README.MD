@@ -26,3 +26,12 @@ Two Step authenticator app.  Built on electron but also able to run in a browser
 | Encrypted Backups      || ❌       |
 | Encrypted Local Storage      || ❌       |
 | REST API      |API to handle backups.| ❌       |
+
+# Used Repositories
+
+|  |  Licence/copyright |
+|:----|:----------|
+|jQuery v3.3.1| (c) JS Foundation and other contributors jquery.org/license|
+|Material Bootstrap| (c) 2015 Daemon Internet Consultants MIT License (MIT)|
+|Bootstrap 4| (c) 2011-2018 Twitter, Inc, (c) 2011-2018 The Bootstrap Authors (MIT)|
+| otpauth v3.2.1| (c) Héctor Molinero Fernández MIT License (MIT)|
