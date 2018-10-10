@@ -1,7 +1,16 @@
-
-# EdgyAuth
-
-Two Step authenticator app.  Built on electron but also able to run in a browser.  Using the TOTP time based one time password system.  This is supported by most websites such as google, github, discord etc..
+<div align="center">
+  <br />
+  <p>
+    <a href=""><img src="https://github.com/edgy-media/EdgyAuth/raw/master/art/edgyauth-logo-1080.png" height="200" alt="EdgyAuth" /></a>
+  </p>
+  <br />
+  <p>
+    <a href="https://discord.gg/hMcX9s"><img src="https://discordapp.com/api/guilds/319849588187987969/embed.png" alt="Discord server" /></a>
+  </p>
+  <p>
+  EdgyAuth The All In One Open Source Material Design Cross Platform Two Step Authenticator! 
+  </p>
+</div>
 
 
 
