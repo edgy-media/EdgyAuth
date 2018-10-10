@@ -49,3 +49,7 @@
 .progress-bar {
     transition: all 0.9s ease;
   }
+
+  .tab-overflow {
+      overflow: auto;
+  }
