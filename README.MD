@@ -31,7 +31,9 @@ Two Step authenticator app.  Built on electron but also able to run in a browser
 
 |  |  Licence/copyright |
 |:----|:----------|
-|jQuery v3.3.1| (c) JS Foundation and other contributors jquery.org/license|
+|JQuery v3.3.1| (c) JS Foundation and other contributors jquery.org/license|
 |Material Bootstrap| (c) 2015 Daemon Internet Consultants MIT License (MIT)|
 |Bootstrap 4| (c) 2011-2018 Twitter, Inc, (c) 2011-2018 The Bootstrap Authors (MIT)|
-| otpauth v3.2.1| (c) Héctor Molinero Fernández MIT License (MIT)|
+| Otpauth v3.2.1| (c) Héctor Molinero Fernández MIT License (MIT)|
+| Popper.js |(C) Federico Zivolo 2018 MIT License (MIT)|
+| Snackbar js |(c) 2016 Chris Brame MIT License (MIT)|
