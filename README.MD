@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <p>
-    <a href=""><img src="https://github.com/edgy-media/EdgyAuth/raw/master/art/edgyauth-logo-1080.png" height="200" alt="EdgyAuth" /></a>
+    <a href=""><img src="https://github.com/edgy-media/EdgyAuth/raw/master/art/edgyauth-logo-wide.png" height="200" alt="EdgyAuth" /></a>
   </p>
   <br />
   <p>
