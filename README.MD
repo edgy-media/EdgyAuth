@@ -5,7 +5,7 @@
   </p>
   <br />
   <p>
-    <a href="https://discord.gg/hMcX9s"><img src="https://discordapp.com/api/guilds/319849588187987969/embed.png" alt="Discord server" /></a>
+    <a href="https://discord.gg/YGzDmAR"><img src="https://discordapp.com/api/guilds/319849588187987969/embed.png" alt="Discord server" /></a>
   </p>
   <p>
   EdgyAuth The All In One Open Source Material Design Cross Platform Two Step Authenticator! 
