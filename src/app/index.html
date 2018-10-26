@@ -13,13 +13,17 @@
                         <div class="progress-bar" id="sec-timer-progress" style="width:0%"></div>
                       </div>
 			<div class="container">
-				<div style="margin:auto">
-					<div class="nav nav-tabs" id="nav-tab" role="tablist">
-						<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tokens</a>
-						<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">New Account</a>
-						<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Settings</a>
-					</div>
-				</div>
+					<ul class="nav nav-justified nav-tabs" id="justifiedTab" role="tablist">
+							<li class="nav-item">
+							  <a aria-controls="home" aria-selected="true" class="nav-link active" data-toggle="tab" href="#nav-home" id="home-tab" role="tab">Tokens</a>
+							</li>
+							<li class="nav-item">
+							  <a aria-controls="profile" aria-selected="false" class="nav-link" data-toggle="tab" href="#nav-profile" id="profile-tab" role="tab">New Account</a>
+							</li>
+							<li class="nav-item">
+							  <a aria-controls="contact" aria-selected="false" class="nav-link" data-toggle="tab" href="#nav-contact" id="contact-tab" role="tab">Settings</a>
+							</li>
+						  </ul>
 			</div>
 		</nav>
 		<div class="container">
@@ -166,6 +170,9 @@
 		<script src="assets/bootstrap4/bootstrap.min.js"></script>
 		<script src="assets/SnackBar-master/dist/snackbar.js"></script>
 		<script defer src="assets/material/js/material.js"></script>
+		<script>const {webFrame} = require('electron')
+			// Set the zoom factor to 90%
+			webFrame.setZoomFactor(0.9);</script>
 		<!-- END OF UI -->
 		<!-- CORE INCLUDES -->
 		<script src="OTP/jsOTP.min.js"></script>
