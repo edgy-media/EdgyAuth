@@ -10,10 +10,10 @@ $ = function(sel) {
   saveStorage();
   loadIssuerList();
   var version = {
-    "no":"1.0.6",
+    "no":"1.5.0",
     "major":"1",
-    "minor":"0",
-    "patch":"5"
+    "minor":"5",
+    "patch":"0"
 }
 
   LoadTabs();
